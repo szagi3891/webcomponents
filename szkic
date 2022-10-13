@@ -15,3 +15,17 @@ potrzebna będzie mapa do tłumaczenia nazwy komponentu na ściekę do definicji
 
 Definiowanie typów do takich webcomponentów...
 https://coryrylan.com/blog/how-to-use-web-components-with-typescript-and-react
+
+
+
+
+SSR
+
+mikrousługa pełniąca rolę mikrofrontu
+
+request -->
+nazwa komponentu, oraz atrybuty. Serwer w odpowiedzi powinien wygenerować statyczny html reprezentujący ten komponent (plus początkowe dane potrzebne do włozenia do store ewentualnie)
+
+mikrousługa powinna zwracać "manifest", czyli mapa z nazwą komponentu na odpowiadający plik js z definicją
+
+
