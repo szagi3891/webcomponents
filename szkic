@@ -29,3 +29,11 @@ nazwa komponentu, oraz atrybuty. Serwer w odpowiedzi powinien wygenerować staty
 mikrousługa powinna zwracać "manifest", czyli mapa z nazwą komponentu na odpowiadający plik js z definicją
 
 
+
+
+
+typy TS
+Jakaś usługa "generowania" definicji tych nowych niestandardowych komponentów.
+Czyli, komenda w "website" spinającym wszystkie komponenty. Po jej odpaleniu, powinien pojawić się plik z definicjami tych komponentów. Ten plik powinien być komitowany.
+https://coryrylan.com/blog/how-to-use-web-components-with-typescript-and-react
+
