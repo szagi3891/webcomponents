@@ -1,0 +1,13 @@
+zmienne klorystyczne jako zmienne cssowe. Podczepione pod głównego root.
+sprawdzić czy się poprawnie propagują do webcomponentów.
+
+
+dynamiczny import który ładuje jakiś plik z definicją webcomponentu
+
+
+api do obserwowania zmian w dom.
+jak się pojawia nowy node i ten node jest webcomponentem, to uruchamiać autoładowanie
+
+potrzebna będzie mapa do tłumaczenia nazwy komponentu na ściekę do definicji tego komponentu.
+
+
