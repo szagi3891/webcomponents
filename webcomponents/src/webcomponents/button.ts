@@ -29,6 +29,7 @@ class ProductImage extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
+
         if (this.shadowRoot) {
             this.shadowRoot.appendChild(template.content.cloneNode(true));
             // this.shadowRoot.querySelector('img').src = this.getAttribute('src');
@@ -42,6 +43,8 @@ class ProductImage extends HTMLElement {
                 });
             }
             // this.shadowRoot.querySelector('#przycisk')
+
+            console.info('odczytuję tajną zmienną szyfrującą', window.zmienna_wspoldzielona);
         }
     }
 
@@ -61,5 +64,7 @@ class ProductImage extends HTMLElement {
 }
 
 window.customElements.define('my-product-image', ProductImage);
+
+// window.customElements.whenDefined
 
 export default {};

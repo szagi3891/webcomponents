@@ -12,6 +12,8 @@ setTimeout(() => {
 
 const root = document.getElementById('root');
 
+window.zmienna_wspoldzielona = 'tajny klucz szyfrujący do multiverse';
+
 if (root === null) {
   console.error('Brak root');
 } else {
@@ -24,7 +26,12 @@ if (root === null) {
         Licznik z App
       </div>
       <App />
-      <my-product-image></my-product-image>
+      <my-product-image>
+        jakaś zawartość która została wsadzona w ten komponent
+        <my-product-image>
+          i kolejna
+        </my-product-image>
+      </my-product-image>
     </React.StrictMode>
   )
 }
