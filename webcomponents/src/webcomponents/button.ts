@@ -1,3 +1,5 @@
+import stan from './stan';
+
 const template = document.createElement('template');
 
 template.innerHTML = `
@@ -6,8 +8,15 @@ template.innerHTML = `
             background: lightgrey;
             padding: 1em;
         }
+        body {
+            background-color: black !important;
+        }
+
+        div {
+            color: red;
+        }
     </style>
-    <div class="product-image">
+    <div class="product-image" id="przycisk">
         To jest zawartość webcomponentu my-product-image
     </div>
 `;
@@ -23,6 +32,16 @@ class ProductImage extends HTMLElement {
         if (this.shadowRoot) {
             this.shadowRoot.appendChild(template.content.cloneNode(true));
             // this.shadowRoot.querySelector('img').src = this.getAttribute('src');
+
+            const button = this.shadowRoot.getElementById('przycisk');
+
+            if (button !== null) {
+                button.addEventListener('click', () => {
+                    console.info("Klikam z komponentu");
+                    stan.increment();
+                });
+            }
+            // this.shadowRoot.querySelector('#przycisk')
         }
     }
 
