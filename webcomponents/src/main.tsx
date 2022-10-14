@@ -49,9 +49,11 @@ if (root === null) {
         Licznik z App
       </div>
       <App />
+
       <my-product-image>
         jakaś zawartość która została wsadzona w ten komponent - statyczna
       </my-product-image>
+
       <my-product-image>
         i kolejna - statyczna
       </my-product-image>

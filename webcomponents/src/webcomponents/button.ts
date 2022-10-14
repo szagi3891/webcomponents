@@ -7,6 +7,7 @@ template.innerHTML = `
         .product-image {
             background: lightgrey;
             padding: 1em;
+            color: var(--planet-color);
         }
         body {
             background-color: black !important;
