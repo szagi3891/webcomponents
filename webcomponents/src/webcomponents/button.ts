@@ -44,7 +44,7 @@ class ProductImage extends HTMLElement {
             }
             // this.shadowRoot.querySelector('#przycisk')
 
-            console.info('odczytuję tajną zmienną szyfrującą', window.zmienna_wspoldzielona);
+            // console.info('odczytuję tajną zmienną szyfrującą', window.zmienna_wspoldzielona);
         }
     }
 

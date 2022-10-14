@@ -12,7 +12,7 @@ setTimeout(() => {
 
 const root = document.getElementById('root');
 
-window.zmienna_wspoldzielona = 'tajny klucz szyfrujący do multiverse';
+// window.zmienna_wspoldzielona = 'tajny klucz szyfrujący do multiverse';
 
 if (root === null) {
   console.error('Brak root');
@@ -27,10 +27,10 @@ if (root === null) {
       </div>
       <App />
       <my-product-image>
-        jakaś zawartość która została wsadzona w ten komponent
-        <my-product-image>
-          i kolejna
-        </my-product-image>
+        jakaś zawartość która została wsadzona w ten komponent - statyczna
+      </my-product-image>
+      <my-product-image>
+        i kolejna - statyczna
       </my-product-image>
     </React.StrictMode>
   )
