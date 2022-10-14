@@ -4,6 +4,29 @@ import App from './App'
 import './index.css'
 import stan from './webcomponents/stan';
 
+declare global {
+  namespace JSX {
+      interface IntrinsicElements {
+          'my-product-image': React.DetailedHTMLProps<
+              React.HTMLAttributes<HTMLElement>,
+              HTMLElement
+          >;
+      }
+  }
+}
+
+declare global {
+  namespace JSX {
+      interface IntrinsicElements {
+          'my-product-image2': React.DetailedHTMLProps<
+              React.HTMLAttributes<HTMLElement> & { name: string },
+              HTMLElement
+          >;
+      }
+  }
+}
+
+
 setTimeout(() => {
   console.info('zasysam webcomponent');
 
@@ -32,6 +55,11 @@ if (root === null) {
       <my-product-image>
         i kolejna - statyczna
       </my-product-image>
+
+      <my-product-image2 name="dsadas">
+        i kolejna - statyczna
+      </my-product-image2>
+
     </React.StrictMode>
   )
 }

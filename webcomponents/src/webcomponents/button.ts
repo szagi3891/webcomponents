@@ -65,6 +65,11 @@ class ProductImage extends HTMLElement {
 
 window.customElements.define('my-product-image', ProductImage);
 
+class ProductImage2 extends ProductImage {}
+
+window.customElements.define('my-product-image2', ProductImage2);
+
+
 // window.customElements.whenDefined
 
 export default {};
